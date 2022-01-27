@@ -19,7 +19,7 @@ from nltk.stem import WordNetLemmatizer
 app = Flask(__name__)
 
 import os
-filename = "C:/Users/Rais/Desktop/Data Science Project/app test/model.pkl"
+filename = "model.pkl"
 os.makedirs(os.path.dirname(filename), exist_ok=True)
 with open(filename, 'rb') as f:
     vect, tfidf_transformer, clf = pickle.load(f)
